@@ -1,0 +1,22 @@
+.menu {
+    background-color: #323232;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 360px 160px;
+        grid-template-rows: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        li {
+            display: inline;
+            color: #ffffff;
+            font-size: 15px;
+
+        }
+    }
+}
