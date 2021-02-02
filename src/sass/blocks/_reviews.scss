@@ -1,0 +1,77 @@
+.reviews {
+    background-color: #f8f3e9;
+    min-height: 420px;
+    &__container {
+        position: relative;
+        margin-top: 60px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 550px);
+        justify-content: space-between;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 120px 390px;
+        justify-content: space-between;
+    }
+    &__descr {
+        position: relative;
+        background-color: #fff;
+        padding-top: 20px;
+        padding-left: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            border: solid #ffffff;
+            border-width: 0 18px 18px 0;
+            display: inline-block;
+            padding: 14px;
+            transform: rotate(135deg);
+        }
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 17px;
+    }
+    &__date {
+        margin-top: 5px;
+        width: 120px;
+        height: 30px;
+        padding-top: 7px;
+        background-color: #bbbbbd;
+        font-size: 11px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 300;
+    }
+    &__text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    i {
+        border: solid #c99c47;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 12px;
+    }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &-left {
+            left: -30px;
+            i {
+                transform: rotate(135deg);
+            }
+        }
+        &-right {
+            right: -30px;
+            i {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

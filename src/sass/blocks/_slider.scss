@@ -1,0 +1,79 @@
+.slider {
+    background: url('../../img/main_bg.png') 50% / cover;
+    min-height: 440px;
+    &__wrapper {
+        position: relative;
+        height: 440px;
+    }
+    &__container {
+        position: absolute;
+        right: 30px;
+        top: 100px;
+        padding: 10px;
+        border: 1px solid #ffffff;
+    }
+    &__content {
+        padding: 15px 0px 0px 15px;
+        height: 160px;
+        width: 410px;
+        background-color: rgba($color: #f4f0ee, $alpha: 0.8);
+        display: grid;
+        grid-template-columns: 105px 235px;
+        grid-template-rows: 130px;
+        column-gap: 20px;
+        
+    }
+    &__logo {
+        padding-top: 13px;
+        font-size: 23px;
+        font-weight: 700;
+        color: #cea65a;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+        border: 1px solid #cea65a;
+        text-align: center;
+        text-transform: uppercase;
+        span {
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+    &__title {
+        padding-top: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #cea65a;
+    }
+    &__text {
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &__place {
+        font-size: 14px;
+        font-weight: 300;
+        color: #757575;
+    }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &-left {
+            transform: rotate(135deg);
+        }
+        &-l {
+            left: -25px;
+        }
+        &-right {
+            transform: rotate(-45deg);
+        }
+        &-r {
+            right: -25px;
+        }
+    }
+    i {
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
