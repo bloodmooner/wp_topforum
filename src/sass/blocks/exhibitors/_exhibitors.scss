@@ -1,0 +1,72 @@
+.exhibitors {
+    border-top: 1px solid #d6d6d6;
+    &__text {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    &__select {
+        margin-top: 20px;
+        span {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 17px;
+        }
+        select {
+            display: block;
+            margin: 10px auto 0px auto;
+            width: 450px;
+            height: 50px;
+            border: 1px solid #e8d8b6;
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+    &__wrapper {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 260px);
+        justify-content: space-between;
+    }
+    &__item {
+        margin-top: 20px;
+    }
+    &__type {
+        font-size: 19px;
+        text-align: center;
+        color: #c99c47;
+        text-transform: uppercase;
+    }
+    &__logo {
+        margin-top: 20px;
+        border: 1px solid #f3ebda;
+        height: 160px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+    &__name {
+        margin-top: 10px;
+        color: #323232;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    &__btn {
+        display: block;
+        margin: 20px auto 0px auto;
+        width: 120px;
+        color: #ffffff;
+    }
+}

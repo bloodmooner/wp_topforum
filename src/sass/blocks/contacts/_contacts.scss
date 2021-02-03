@@ -1,0 +1,36 @@
+.contacts {
+    border-top: 1px solid #d6d6d6;
+    &__wrapper {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 750px 360px;
+        grid-template-rows: 440px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-top: 10px;
+    }
+    &__title, &__name, &__mail, &__phone {
+        font-size: 15px;
+        padding-top: 1px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__mail {
+        a {
+            color: #d0a960;
+        }
+    }
+    &__phone {
+        a {
+            color: #323232;
+        }
+    }
+}

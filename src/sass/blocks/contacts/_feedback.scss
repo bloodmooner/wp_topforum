@@ -1,0 +1,84 @@
+.feedback {
+    background-color: #f8f3e9;
+    min-height: 415px;
+    &__wrapper {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 555px);
+        justify-content: space-between;
+    }
+    &__form {
+        form {
+            display: grid;
+            grid-template-columns: 555px;
+            grid-template-rows: 115px 50px;
+            row-gap: 40px;
+        }
+        &-text {
+            position: relative;
+            label {
+                position: absolute;
+                top: -25px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #6a6a69;
+            }
+            textarea {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #e8d8b6;
+                resize: none;
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+        &-data {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            label {
+                position: absolute;
+                top: -25px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #6a6a69;
+            }
+            input {
+                width: 270px;
+                border: 1px solid #e8d8b6;
+                padding: 15px;
+                font-size: 12px;
+            }
+        }
+        &-btn {
+            width: 100%;
+            position: relative;
+            button {
+                position: absolute;
+                right: 0;
+                top: -20px;
+                width: 110px;
+                background-color: #c99c47;
+                color: #ffffff;
+            }
+        }
+    }
+    &__contact {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__phone {
+        font-size: 23px;
+        display: block;
+    }
+    &__faq {
+        font-weight: 300;
+        span {
+            display: block;
+            a {
+                color: #c99c47;
+                text-decoration: underline;
+            }
+        }
+    }
+}
